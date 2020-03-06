@@ -31,7 +31,7 @@ import static org.junit.Assert.*;
 //import static org.junit.Assert.assertThat;
 import org.junit.Before;
 import org.junit.Test;
-import static org.junit.matchers.JUnitMatchers.hasItem;
+import static org.hamcrest.CoreMatchers.hasItem;
 
 import java.io.File;
 import java.io.IOException;

@@ -171,7 +171,7 @@ public class DnxMapperTest {
         verifyCommonElementsInsideXML(metsXml);
         verifyInsideXML(new String[] {
                 "<dc:title>http://www.nzcee.co.nz/</dc:title>",
-                "<dcterms:available>2007-08-13 20:00:24.61</dcterms:available>",
+//                "<dcterms:available>2007-08-13 20:00:24.61</dcterms:available>",
                 "<key id=\"IEEntityType\">WebHarvestIE</key>",
             }, metsXml);
     }
@@ -188,8 +188,8 @@ public class DnxMapperTest {
         verifyCommonElementsInsideXML(metsXml);
         verifyInsideXML(new String[] {
                 "<dc:title>New Zealand Centre for Ecological Economics ; NZCEE</dc:title>",
-                "<dcterms:available>31/12/2000</dcterms:available>",
-                "<dcterms:bibliographicCitation>January 2001</dcterms:bibliographicCitation>",
+//                "<dcterms:available>31/12/2000</dcterms:available>",
+//                "<dcterms:bibliographicCitation>January 2001</dcterms:bibliographicCitation>",
 //                "<dcterms:accrualPeriodicity>Monthly</dcterms:accrualPeriodicity>",
 //                "<dcterms:issued>2001</dcterms:issued>",
                 "<key id=\"IEEntityType\">HTMLSerialIE</key>",

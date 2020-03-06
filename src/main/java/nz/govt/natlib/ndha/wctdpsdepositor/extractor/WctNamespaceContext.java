@@ -30,6 +30,7 @@ import java.util.Iterator;
  * Required by the class @{link XPathWctMetsExtractor} to define the XML Namespaces used
  * in Wct Met's documents. 
  */
+@SuppressWarnings("unchecked")
 public class WctNamespaceContext implements NamespaceContext {
 
     public String getNamespaceURI(String prefix) {
@@ -48,7 +49,6 @@ public class WctNamespaceContext implements NamespaceContext {
     }
 
     // This method isn't necessary for XPath processing either.
-    @SuppressWarnings("unchecked")
 	public Iterator getPrefixes(String uri) {
         throw new UnsupportedOperationException();
     }

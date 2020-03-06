@@ -31,7 +31,7 @@ import org.jmock.Expectations;
 import org.jmock.Mockery;
 import static org.junit.Assert.assertThat;
 import org.junit.Test;
-import static org.junit.matchers.JUnitMatchers.containsString;
+import static org.hamcrest.CoreMatchers.containsString;
 
 import java.io.BufferedReader;
 import java.io.File;

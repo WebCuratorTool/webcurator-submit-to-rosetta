@@ -26,7 +26,7 @@ import org.junit.Test;
 
 import java.lang.reflect.Field;
 
-import static junit.framework.Assert.fail;
+import static org.junit.Assert.fail;
 
 
 public class WctDepositParameterTest {

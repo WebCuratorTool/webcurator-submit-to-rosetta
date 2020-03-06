@@ -27,6 +27,7 @@ import nz.govt.natlib.ndha.wctdpsdepositor.CustomDepositField;
 import nz.govt.natlib.ndha.wctdpsdepositor.extractor.filefinder.FileArchiveBuilder;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
+import org.dom4j.QName;
 import org.w3c.dom.Document;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
@@ -341,7 +342,7 @@ public class XPathWctMetsExtractor implements WctDataExtractor {
         if (name == null || value == null) return;
         if (additionalDublinCoreElements == null)
             additionalDublinCoreElements = DublinCoreFactory.getInstance().createDocument();
-        additionalDublinCoreElements.addElement(namespace, name, value);
+        additionalDublinCoreElements.addElement(Integer.toString(namespace), name, new QName(value));
     }
 
     public HarvestType getHarvestType() {

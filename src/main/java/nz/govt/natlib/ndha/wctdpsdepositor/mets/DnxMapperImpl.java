@@ -48,6 +48,7 @@ import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.apache.xmlbeans.XmlError;
 import org.apache.xmlbeans.XmlOptions;
+import org.dom4j.QName;
 import org.webcurator.core.archive.dps.DpsDepositFacade.HarvestType;
 
 import java.text.SimpleDateFormat;
@@ -173,11 +174,11 @@ public class DnxMapperImpl implements DnxMapper {
     }
 
     private void addDcElement(DublinCore dc, String key, String value) {
-        dc.addElement(DublinCore.DC_NAMESPACE, key, value);
+        dc.addElement(Integer.toString(DublinCore.DC_NAMESPACE), key, new QName(value));
     }
 
     private void addDcTermsElement(DublinCore dc, String key, String value) {
-        dc.addElement(DublinCore.DCTERMS_NAMESPACE, key, value);
+        dc.addElement(Integer.toString(DublinCore.DCTERMS_NAMESPACE), key, new QName(value));
     }
     
     private DnxDocument getDnxDoc(MetsWriter metsWriter) {
